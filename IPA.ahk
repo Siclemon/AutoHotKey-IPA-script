@@ -24,7 +24,6 @@ U:: SendText "ʊ"
 
 V & Down:: SendText "ʌ"
 
-
 ;=======CONSONNES=======
 
 N & Left:: SendText "ɲ"
@@ -45,8 +44,20 @@ D:: SendText "ð"
 
 H & Down:: SendText "ɥ"
 
+,:: SendText "ʔ"
+?:: SendText "ʔ"
+
+T & S:: SendText "ʦ"
+T & H:: SendText "ʧ"
+D & Z:: SendText "ʣ"
+D & H:: SendText "ʤ"
+
 ;=======DIACRITIQUES=======
 SC034:: SendText "ː"
+':: SendText "ˈ"
+' & Down:: SendText "ˌ"
+_:: SendText "‿"
+
 é:: Send "{U+0303}"
 J::SendText "ʲ"
 
