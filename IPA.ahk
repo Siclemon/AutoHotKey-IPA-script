@@ -61,7 +61,6 @@ _:: SendText "‿"
 é:: Send "{U+0303}"
 J::SendText "ʲ"
 
-#HotIf
 Esc::{
     MsgBox "Script stopped."
     ExitApp
