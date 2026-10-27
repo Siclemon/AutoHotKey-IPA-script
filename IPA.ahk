@@ -24,6 +24,8 @@ U:: SendText "ʊ"
 
 V & Down:: SendText "ʌ"
 
+E & R:: SendText "ɚ"
+
 ;=======CONSONNES=======
 
 N & Left:: SendText "ɲ"
@@ -52,14 +54,27 @@ T & H:: SendText "ʧ"
 D & Z:: SendText "ʣ"
 D & H:: SendText "ʤ"
 
+L:: Send "ɫ"
+
 ;=======DIACRITIQUES=======
 SC034:: SendText "ː"
 ':: SendText "ˈ"
 ' & Down:: SendText "ˌ"
 _:: SendText "‿"
 
-é:: Send "{U+0303}"
 J::SendText "ʲ"
+H::SendText "ʰ"
+W::SendText "ʷ"
+R & Right::Send "{U+02DE}"      ;rhotic
+é:: Send "{U+0303}"             ;nasal
+U & Down::Send  "{U+032F}"      ;non-syllabic
+^ & Down::Send  "{U+032F}"      ;non-syllabic
+O & Down::Send "{U+0325}"       ;voiceless
+SC006 & Down::Send  "{U+032A}"  ;dental
+SC00C & Down::Send  "{U+032A}"  ;dental
+SC006 & Up::Send  "{U+033A}"    ;apical
+SC00C & Up::Send  "{U+033A}"    ;apical
+SC006 & SC00C::Send  "{U+033B}" ;laminal
 
 Esc::{
     MsgBox "Script stopped."
